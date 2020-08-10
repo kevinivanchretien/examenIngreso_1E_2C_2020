@@ -26,13 +26,13 @@ function mostrar() {
 		nombre = prompt("Ingrese su nombre");
 		do {
 			peso = parseInt(prompt("Ingrese su peso"));
-		} while (peso <= 0 && peso == isNaN);
+		} while (!(peso >= 0 || peso == isNaN));
 		do {
 			sexo = prompt("Ingrese su sexo f/m");
 		} while (sexo != "f" && sexo != "m");
 		do {
 			edad = parseInt(prompt("Ingrese su edad"));
-		} while (edad == isNaN);
+		} while (edad != isNaN);
 
 		acumEdad = acumEdad + edad;
 
